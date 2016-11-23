@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:id="@+id/rel"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.dell.movieapiproject1a.Fragments.DetailActivityFragment">
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:id="@+id/k"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"/>
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+
+                    android:layout_weight="1"
+                    android:id="@+id/name"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:layout_below="@+id/imageView"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <!--  android:text="Large Text"-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:layout_toRightOf="@+id/imageView"
+                    android:id="@+id/data"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/name"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <!--   android:text="Medium Text"-->
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/favour"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:id="@+id/fav"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+
+            android:id="@+id/synopsis"
+            android:layout_below="@+id/k"
+            android:layout_centerHorizontal="true" />
+        <!--android:text="New Text"-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/reviews"
+            android:text="Reviews"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/synopsis"
+            android:drawableRight="@android:drawable/arrow_down_float" />
+        <!-- android:text="Reviews"-->
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/reviews"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/trailer_list"
+            ></ListView>
+    </RelativeLayout>
+</ScrollView>

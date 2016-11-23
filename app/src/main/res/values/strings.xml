@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Movie Api Project 1A</string>
+    <string name="action_sort_by_popularity">Sort By Popularity</string>
+    <string name="action_sort_by_user_rating">Sort By User ratings</string>
+    <string name="key">fb35a680090503d985daf7217ecec0a2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
